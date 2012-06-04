@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+  <!-- <merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shelves="http://schemas.android.com/apk/res/com.mobilelibrary"> --> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    xmlns:shelves="http://schemas.android.com/apk/res/com.mobilelibrary" >
+    <include 
+		layout="@layout/common_topbar" />
+    
+    <com.mobilelibrary.view.ShelvesView
+        android:id="@+id/grid_shelves"
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        android:cacheColorHint="#00000000"
+        android:listSelector="@android:color/transparent"
+
+        android:numColumns="auto_fit"
+        android:columnWidth="160px"
+
+        shelves:shelfBackground="@drawable/shelf_panel" />
+</LinearLayout>

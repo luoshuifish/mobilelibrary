@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#ffffff">
+
+	<ViewFlipper
+		android:orientation="vertical" android:id="@+id/ViewFlipper"
+		android:layout_width="fill_parent" android:layout_height="75dip"
+		android:background="@drawable/gradient_dark_purple">
+
+		<!-- 初始加载 -->
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_marginLeft="15dip" android:gravity="left|center_vertical">
+			<com.mobilelibrary.view.ProgressBar
+				android:id="@+id/ProgressBar" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</com.mobilelibrary.view.ProgressBar>
+		</LinearLayout>
+
+		<!-- 加载成功 -->
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:gravity="center">
+			<Gallery android:id="@+id/Gallery" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:spacing="0px" />
+		</LinearLayout>
+
+		<!-- 加载失败 -->
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_marginLeft="15dip" android:gravity="left|center_vertical">
+			<com.mobilelibrary.view.FailureBar
+				android:id="@+id/FailureBar" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</com.mobilelibrary.view.FailureBar>
+		</LinearLayout>
+	</ViewFlipper>
+</LinearLayout>

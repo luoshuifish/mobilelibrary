@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+    <include 
+		layout="@layout/common_topbar" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+      <TableLayout  android:background="@drawable/white" android:layout_width="fill_parent" android:layout_height="0dip" android:stretchColumns="0,1" android:layout_weight="7.0">
+        <TableRow android:layout_weight="1.0">
+            <Button android:id="@+id/btn_personal_information" android:layout_column="0" android:text="@string/mainpage_personal_information" android:drawableTop="@drawable/home_person_information" style="@style/Mainpage_Navi_Button" />
+            <Button android:id="@+id/btn_my_shelf" android:layout_column="1" android:text="@string/mainpage_my_shelf" android:drawableTop="@drawable/home_book_shelf" style="@style/Mainpage_Navi_Button" />
+        </TableRow>
+        <TableRow android:layout_weight="1.0">
+            <Button android:id="@+id/btn_book_borrowed" android:layout_column="0" android:text="@string/mainpage_borrowed_books" android:drawableTop="@drawable/home_borrowed_book" style="@style/Mainpage_Navi_Button" />
+            <Button android:id="@+id/btn_book_records" android:layout_column="1" android:text="@string/mainpage_book_records" android:drawableTop="@drawable/home_books_records" style="@style/Mainpage_Navi_Button" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:layout_height="wrap_content"
+		android:minHeight="75dip" android:layout_width="fill_parent"
+		android:orientation="horizontal" android:gravity="center_vertical"
+		android:paddingLeft="13dip" android:paddingRight="13dip">
+
+		<ProgressBar android:id="@+id/ProgressBar"
+			android:layout_width="48dip" android:layout_height="48dip"></ProgressBar>
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:paddingLeft="13dip" android:orientation="vertical"
+			android:layout_width="fill_parent">
+			<TextView android:id="@+id/ProgressTextView"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="@string/loading_book_recommend" android:textSize="20dip" android:textColor="#ffffff"></TextView>
+		</LinearLayout>
+
+	</LinearLayout>
+</merge>

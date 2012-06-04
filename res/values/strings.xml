@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MobileLibraryActivity!</string>
+    <string name="app_name">MobileLibrary</string>
+    
+    <!-- title and tag -->
+    <string name="main_page">首页</string>
+    <string name="search">查询</string>
+    <string name="collect">收藏</string>
+    <string name="other">其他</string>
+    <string name="back">返回</string>
+    <string name="my_library">我的图书馆</string>
+    <string name="book_search">书目查询</string>
+    <string name="set_password">修改密码</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about">关于</string>
+    <string name="repeat_password">确认密码：</string>
+    <string name="confirm_modify">确认修改</string>
+    <string name="password_not_empty">密码不能为空</string>
+    <string name="not_same">两次密码输入不一致</string>
+    <string name="modify_success">修改成功</string>    
+    <string name="modify_password">修改密码</string>
+    <string name="new_password">新设密码：</string>
+
+    <!-- Common info -->
+    <string name="version">版本号：1.0</string>
+    <string name="member">组员：唐韧 于永江 朱珣 张敬伟 刘瑞东 高明辉</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="promotion">提示</string>
+    
+    <!-- Dialog promotion info -->
+    <string name="dialog_exit">确认退出吗?</string>
+    
+    <!-- 个人信息 -->
+    <string name="mainpage_personal_information">个人信息</string>
+    
+
+    
+    <!-- 已借书目 -->
+    <string name="mainpage_borrowed_books">已借书目</string>
+    
+    
+    <!-- 借书记录 -->
+    <string name="mainpage_book_records">借书记录</string>
+    
+    
+    
+    <!-- 加载新书推荐的进度条 -->
+    <string name="loading_book_recommend">正在加载推荐的新书</string>
+    
+    
+    <!-- 加载新书推荐失败，需要重新装载的按钮显示 -->
+    <string name="loading_book_recommend_retry">重试</string>
+    
+    <!-- 网络连接失败-->
+    <string name="connection_fail">网络连接失败</string>
+    
+    
+    <!-- 图书搜索框中的hint-->
+    <string name="search_book_key_hint">图书标题</string>
+    
+    
+    <!-- 显示没有更多的书目查询结果-->
+    <string name="no_results">没有更多的结果</string>
+    
+    
+     <!-- 输入提示-->
+    <string name="search_list_hint">请在上面输入您要的图书</string>
+    
+    
+    <!-- 进度条显示的值-->
+    
+    <!-- 请等待-->
+    <string name="wait_msg">请等待</string>
+    <!-- 加载失败-->
+    <string name="fail_msg">加载失败</string>
+    
+    
+    
+    <!-- 个人信息-->
+    <string name="person_name">姓名:</string>
+    
+    <string name="person_id">学号:</string>
+    
+    <string name="person_academy">学院:</string>
+    
+    
+    <string name="person_class">班级:</string>
+    
+    
+    
+    
+    
+    
+     
+     
+    <!-- my book shelf -->
+    <string name="mainpage_my_shelf">我的书架</string>
+    
+    <!-- my store books-->
+    <string name="my_storebook">我的收藏</string>
+     
+    <!-- my borrowed books-->
+   	<string name="my_borrowedbook">我的借书</string>
+   	
+   	
+   	<!-- no borrowed books hint-->
+   	<string name="no_borrowed_book_results">没有借的书籍</string>
+   	
+   	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+  
+
+    
+</resources>

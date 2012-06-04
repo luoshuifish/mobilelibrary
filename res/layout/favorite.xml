@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" 
+    >
+    
+    <include 
+		layout="@layout/common_topbar" />
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" 
+	android:paddingTop="10dp"
+    >
+    
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"   android:gravity="center">    
+        <EditText android:id="@+id/et_search_key" android:layout_width="fill_parent"  android:layout_height="wrap_content"
+         android:paddingLeft="7dp"  android:layout_marginLeft="10dp" android:layout_marginRight="7dip"  android:layout_weight="1"
+          android:singleLine="true" android:hint="@string/search_book_key_hint" />
+    	<Button android:id="@+id/btn_do_search" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/search"
+			android:layout_marginRight="10dip"
+			android:src="@drawable/ic_btn_search"></Button>
+    </LinearLayout>
+    
+    <ViewFlipper
+		android:orientation="vertical" android:id="@+id/ViewFlipper"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/gradient_dark_purple"
+		android:layout_marginTop="10dp"
+		>
+		<!-- 初始加载 -->
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_marginLeft="15dip" android:gravity="left|center_vertical">
+			<com.mobilelibrary.view.ProgressBar
+				android:id="@+id/ProgressBar" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</com.mobilelibrary.view.ProgressBar>
+		</LinearLayout>
+
+		<!-- 加载成功 -->
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:gravity="center">
+			<Gallery android:id="@+id/Gallery" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:spacing="0px" />
+		</LinearLayout>
+
+		<!-- 加载失败 -->
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_marginLeft="15dip" android:gravity="left|center_vertical">
+			<com.mobilelibrary.view.FailureBar
+				android:id="@+id/FailureBar" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</com.mobilelibrary.view.FailureBar>
+		</LinearLayout>
+	</ViewFlipper>
+	
+    
+    <ViewFlipper
+			android:id="@+id/SearchViewFlipper" android:background="#fff"
+			android:layout_weight="1" android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_marginTop="10dp">
+			<ListView android:layout_width="fill_parent" android:id="@+id/SearchListView"
+				android:divider="#000" android:layout_height="fill_parent" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/no_results"
+				android:layout_gravity="center"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/search_list_hint"
+				android:layout_gravity="center"></TextView>
+		</ViewFlipper>
+	</LinearLayout>
+
+</LinearLayout>

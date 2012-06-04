@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color">#EDEDED</color>
+	<color name="red">#CD2626</color>
+	<color name="green">#008B00</color>
+	<color name="grey">#FF909090</color>
+	<drawable name="black">#FF000000</drawable>
+	<drawable name="white">#FFFFFFFF</drawable>
+	<drawable name="red">#FFE31818</drawable>
+	<drawable name="gray">#FF8B8B8B</drawable>
+	<drawable name="transparent">#00000000</drawable>
+</resources>
